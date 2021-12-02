@@ -5,4 +5,11 @@ spec:
     repoURL: https://github.com/sharepointoscar/ssp-eks-workloads
     targetRevision: main
   ingress:
-    host: dev.k8s.devopsoscar.dev
+    annotations:
+    # Note that the backend talks over HTTP.
+      #service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+      # TODO: Fill in with the ARN of your certificate.
+      service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-east-1:540060600283:certificate/36af44f2-e376-479f-9ef0-834ab69ecf88
+      # Only run SSL on the port named "https" below.
+      #service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "https"
+    host: 
