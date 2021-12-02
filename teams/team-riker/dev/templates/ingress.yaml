@@ -9,7 +9,7 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
 spec:
   rules:
-  - host: skiapp.{{ .Values.spec.ingress.host }}
+  - host: guestbook-ui.{{ .Values.spec.ingress.host }}
     http:
       paths:
       - path: /skiapp
