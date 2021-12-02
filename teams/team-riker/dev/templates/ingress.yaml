@@ -14,7 +14,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: skiapp
+            name: skiapp-service
             port: 
               number: 8080
         
