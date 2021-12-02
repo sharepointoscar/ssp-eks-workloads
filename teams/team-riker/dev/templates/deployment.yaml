@@ -14,7 +14,7 @@ spec:
         app: skiapp
     spec:
       containers:
-      - image: sharepointoscar/skiapp:cd025ea57082e712214fbee60d074de81cd2dc9d
+      - image: sharepointoscar/skiapp:c6d11127cd90d14f95bf19ed098b76b8d3d745ff
         name: skiapp
         ports:
         - containerPort: 8080
