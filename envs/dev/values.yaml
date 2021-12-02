@@ -6,4 +6,4 @@ spec:
     targetRevision: main
   ingress:
     annotations:
-    host: 
+    host: dev.k8s.devopsoscar.dev
