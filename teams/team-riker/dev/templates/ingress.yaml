@@ -10,11 +10,11 @@ spec:
   - host: guestbook-ui.{{ .Values.spec.ingress.host }}
     http:
       paths:
-      - path: /
+      - path: /skiapp
         pathType: Prefix
         backend:
           service:
-            name: guestbook-ui
+            name: skiapp
             port: 
               number: 80
         
