@@ -20,6 +20,7 @@ spec:
         value: {{ .Values.spec.ingress.host }}
   syncPolicy:
     automated:
+      selfHeal: true
       prune: true
     syncOptions:
     - CreateNamespace=true
