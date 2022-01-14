@@ -12,12 +12,12 @@ spec:
   - host: ski.{{ .Values.spec.ingress.host }}
     http:
       paths:
-      - path: /*
-        pathType: Prefix
+      - path: /
+        #pathType: Prefix
         backend:
           service:
             name: skiapp-service
             port: 
-              number: 8080
+              number: 80
         
         
