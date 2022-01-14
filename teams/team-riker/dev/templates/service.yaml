@@ -4,7 +4,7 @@ metadata:
   name: skiapp-service
 spec:
   ports:
-  - port: 443
+  - port: 80
     targetPort: 8080
   selector:
     app: skiapp
