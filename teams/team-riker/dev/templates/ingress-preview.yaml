@@ -4,7 +4,7 @@ metadata:
   name: skiapp-ingress-preview
   namespace: team-riker
   annotations:
-    alb.ingress.kubernetes.io/group.name: riker
+    alb.ingress.kubernetes.io/group.name: riker-preview
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
