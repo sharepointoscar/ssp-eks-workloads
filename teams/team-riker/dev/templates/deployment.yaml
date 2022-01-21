@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: skiapp
 spec:
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
         app: skiapp
     spec:
       containers:
-      - image: sharepointoscar/skiapp:v2
+      - image: sharepointoscar/skiapp:v1
         name: skiapp
         ports:
         - containerPort: 8080
