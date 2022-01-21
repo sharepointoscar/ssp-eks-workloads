@@ -1,23 +1,23 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: bluegreen-demo
+  name: skiapp-rollout
   labels:
-    app: bluegreen-demo
+    app: skiapp
 spec:
   replicas: 3
   revisionHistoryLimit: 1
   selector:
     matchLabels:
-      app: bluegreen-demo
+      app: skiapp
   template:
     metadata:
       labels:
-        app: bluegreen-demo
+        app: skiapp
     spec:
       containers:
-      - name: bluegreen-demo
-        image: argoproj/rollouts-demo:blue
+      - name: skiapp
+        image: sharepointoscar/skiapp:v1
         imagePullPolicy: Always
         ports:
         - name: http
