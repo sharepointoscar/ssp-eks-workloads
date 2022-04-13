@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: skiapp-service-preview
-  namespace: team-riker-space
+  namespace: team-riker
 spec:
   ports:
     - port: 80
