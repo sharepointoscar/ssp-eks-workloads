@@ -3,7 +3,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/sharepointoscar/ssp-eks-workloads
-    targetRevision: main
+    targetRevision: alb-skiapp
   ingress:
     annotations:
     host: k8s.devopsoscar.dev
