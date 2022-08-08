@@ -25,9 +25,12 @@ spec:
           containerPort: 8080
           protocol: TCP
         resources:
-          requests:
-            memory: 32Mi
-            cpu: 5m
+            requests:
+                memory: "64Mi"
+                cpu: "250m"
+            limits:
+                memory: "128Mi"
+                cpu: "1"
   strategy:
     blueGreen:
       autoPromotionEnabled: false
