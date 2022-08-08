@@ -68,7 +68,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: skiapprev.{{ .Values.spec.ingress.host }}
+  - host: #skiapprev.{{ .Values.spec.ingress.host }}
     http:
       paths:
       - path: /
