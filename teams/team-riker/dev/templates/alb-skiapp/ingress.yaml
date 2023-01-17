@@ -11,7 +11,8 @@ metadata:
     #alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
     alb.ingress.kubernetes.io/tags: Environment=dev,Team=Riker
 spec:
-  ingressClassName: alb
+  # comment out the line below if not using Load Balancer Controller
+  #ingressClassName: alb
   rules:
   - host: #skiapp.{{ .Values.spec.ingress.host }}
     http:
