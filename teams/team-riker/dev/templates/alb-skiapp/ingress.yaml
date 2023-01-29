@@ -14,7 +14,7 @@ spec:
   # comment out the line below if not using Load Balancer Controller
   ingressClassName: alb
   rules:
-  - host: skiapp.{{ .Values.spec.ingress.host }}
+  - host: #skiapp.{{ .Values.spec.ingress.host }}
     http:
       paths:
       - path: /
